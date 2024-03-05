@@ -23,19 +23,24 @@ class ProductManager {
 
 
   async addProduct(product) {
-    if (!product.title || !product.description || !product.price || !product.thumbnail || !product.code || !product.stock) {
-      throw new Error('All fields are required');
+    try{
+      if (!product.title || !product.description || !product.price || !product.thumbnail || !product.code || !product.stock) {
+        throw new Error('All fields are required');
+      }
+  
+      if (this.products.some(p => p.code === product.code)) {
+        throw new Error(`The code ${product.code} already exists`);
+      }
+      this.lastId++;
+      const productId = this.lastId;
+      product.id = productId;
+      this.products.push(product);
+  
+      await this.saveProductsToFile(); // Guardar productos en el archivo
+      console.log('Prueba 2: Producto agregado satisfactoriamente:', product);
+    }catch (error) {
+      console.error('Prueba 2: Error al agregar el producto:', error.message);
     }
-
-    if (this.products.some(p => p.code === product.code)) {
-      throw new Error(`The code ${product.code} already exists`);
-    }
-    this.lastId++;
-    const productId = this.lastId;
-    product.id = productId;
-    this.products.push(product);
-
-    await this.saveProductsToFile(); // Guardar productos en el archivo
   }
 
   async saveProductsToFile() {
@@ -55,28 +60,40 @@ class ProductManager {
   }
 
   async updateProduct(productId, updatedProduct) {
-    const index = this.products.findIndex(p => p.id === productId);
-    if (index === -1) {
-      console.error(`Product with ID ${productId} not found`);
-      return;
+    try{
+      const index = this.products.findIndex(p => p.id === productId);
+      if (index === -1) {
+        console.error(`Product with ID ${productId} not found`);
+        return;
+      }
+  
+      updatedProduct.id = productId;
+      this.products[index] = updatedProduct;
+  
+      await this.saveProductsToFile(); // Actualizar el archivo
+      console.log('Prueba 5: Producto actualizado correctamente (ID no cambió):', updatedProduct);
+
+    }catch (error) {
+      console.error(`Prueba 6: Error al eliminar el producto con ID ${productId1}:`, error.message);
     }
-
-    updatedProduct.id = productId;
-    this.products[index] = updatedProduct;
-
-    await this.saveProductsToFile(); // Actualizar el archivo
   }
 
   async deleteProduct(productId) {
-    const index = this.products.findIndex(p => p.id === productId);
-    if (index === -1) {
-      console.error(`Product with ID ${productId} not found`);
-      return;
+    try{
+      const index = this.products.findIndex(p => p.id === productId);
+      if (index === -1) {
+        console.error(`Product with ID ${productId} not found`);
+        return;
+      }
+  
+      this.products.splice(index, 1);
+  
+      await this.saveProductsToFile(); // Actualizar el archivo
+      console.log(`Prueba 6: Producto con ID ${productId} eliminado correctamente`);
+
+    }catch (error) {
+      console.error(`Prueba 6: Error al eliminar el producto con ID ${productId1}:`, error.message);
     }
-
-    this.products.splice(index, 1);
-
-    await this.saveProductsToFile(); // Actualizar el archivo
   }
 }
 
@@ -98,12 +115,9 @@ class ProductManager {
     stock: 25,
   };
 
-  try {
-    await manager.addProduct(product1);
-    console.log('Prueba 2: Producto agregado satisfactoriamente:', product1);
-  } catch (error) {
-    console.error('Prueba 2: Error al agregar el producto:', error.message);
-  }
+ 
+  await manager.addProduct(product1);
+  
 
   // Prueba 3: Verificar si "getProducts" devuelve el producto recién agregado
   console.log('Prueba 3: Productos después de agregar uno:', manager.getProducts());
@@ -120,20 +134,14 @@ class ProductManager {
     stock: 30,
   };
 
-  try {
-    await manager.updateProduct(productId1, updatedProduct);
-    console.log('Prueba 5: Producto actualizado correctamente (ID no cambió):', updatedProduct);
-  } catch (error) {
-    console.error('Prueba 5: Error al actualizar el producto:', error.message);
-  }
+ 
+  await manager.updateProduct(productId1, updatedProduct);
+ 
 
   // Prueba 6: Eliminar un producto por ID
-  try {
+
     await manager.deleteProduct(productId1);
-    console.log(`Prueba 6: Producto con ID ${productId1} eliminado correctamente`);
-  } catch (error) {
-    console.error(`Prueba 6: Error al eliminar el producto con ID ${productId1}:`, error.message);
-  }
+   
 
   // Verificar que el producto se haya eliminado
   console.log('Productos después de eliminar uno:', manager.getProducts());
