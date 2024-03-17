@@ -10,6 +10,7 @@ const PORT = 8080
 // Routes
 app.use("/api/carts", cartsRouter)
 app.use("/api/products", productsRouter)
+app.use(express.static("public"))
 
 //app.use()
 app.listen(PORT, ()=>{

@@ -3,13 +3,78 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta>
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Mauro Leonardi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
 
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li::before {
+            content: "➤ ";
+            color: #007bff;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container">
+        <h1>E-commerce Mauro Leonardi</h1>
 
+        <div><strong>Rutas:</strong></div>
+        <hr>
+        <div><strong>Productos:</strong></div>
+        <ul>
+            <li><strong>GET</strong> localhost:8080/api/products => Ver todos los productos disponibles</li>
+            <li><strong>POST</strong> localhost:8080/api/products/ => Agregar un nuevo producto al e-commerce (debe completar todos los datos)</li>
+            <li><strong>GET</strong> localhost:8080/api/products/id => Ver el producto solicitado por parámetro</li>
+            <li><strong>PUT</strong> localhost:8080/api/products/id => Modificar uno o más datos del producto indicado por parámetro</li>
+            <li><strong>DELETE</strong> localhost:8080/api/products/id => Eliminar el producto indicado por parámetro</li>
+        </ul>
+
+        <hr>
+        <div><strong>Carritos:</strong></div>
+        <ul>
+            <li><strong>GET</strong> localhost:8080/api/carts => Ver todos los carritos creados</li>
+            <li><strong>POST</strong> localhost:8080/api/carts => Crear un nuevo carrito (se podrá darle un "name" al carro)</li>
+            <li><strong>GET</strong> localhost:8080/api/carts/id => Ver el carrito solicitado por parámetro</li>
+            <li><strong>POST</strong> localhost:8080/api/carts/:cid/products/:pid => Permitirá agregar al carrito indicado el producto seleccionado</li>
+        </ul>
+    </div>
 </body>
 
 </html>
