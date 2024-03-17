@@ -10,6 +10,11 @@ const manager = new ProductManager ('src/products.json')
 await manager.initialize()
 const products = manager.getProducts()
 
+app.get('/',(req, res)=>{
+  res.send('Dirigete a "/products" para ver nuestro listado de productos.')
+})
+
+
 app.get('/products', async (req, res) => {
   const limit = parseInt(req.query.limit);
   const productsToShow = limit ? products.slice(0, limit) : products;

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Camiseta",
+    "description": "Camiseta de algodón de manga corta",
+    "code": "CMST001",
+    "price": 20.99,
+    "status": true,
+    "stock": 100,
+    "category": "Ropa"
+  },
+  {
+    "id": 2,
+    "title": "Pantalones",
+    "description": "Pantalones vaqueros ajustados",
+    "code": "PNTL002",
+    "price": 35.5,
+    "status": true,
+    "stock": 80,
+    "category": "Ropa"
+  },
+  {
+    "id": 3,
+    "title": "Zapatos",
+    "description": "Zapatos de cuero con cordones",
+    "code": "ZPTS003",
+    "price": 99,
+    "status": true,
+    "stock": 120,
+    "category": "Calzado"
+  },
+  {
+    "id": 4,
+    "title": "Reloj",
+    "description": "Reloj de pulsera analógico",
+    "code": "RLJ004",
+    "price": 99.99,
+    "status": true,
+    "stock": 60,
+    "category": "Accesorios"
+  },
+  {
+    "id": 5,
+    "title": "Mochila",
+    "description": "Mochila resistente al agua con múltiples compartimentos",
+    "code": "MCHL005",
+    "price": 45.75,
+    "status": true,
+    "stock": 90,
+    "category": "Accesorios"
+  },
+  {
+    "id": 6,
+    "title": "Gafas de sol",
+    "description": "Gafas de sol polarizadas",
+    "code": "GFSL006",
+    "price": 25,
+    "status": true,
+    "stock": 110,
+    "category": "Accesorios"
+  },
+  {
+    "id": 7,
+    "title": "Libro",
+    "description": "Novela de ciencia ficción",
+    "code": "LBR007",
+    "price": 15.99,
+    "status": true,
+    "stock": 70,
+    "category": "Libros"
+  },
+  {
+    "id": 8,
+    "title": "Portátil",
+    "description": "Ordenador portátil de última generación",
+    "code": "PRTL008",
+    "price": 899.99,
+    "status": true,
+    "stock": 30,
+    "category": "Tecnología"
+  },
+  {
+    "id": 9,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente con cámara de alta resolución",
+    "code": "SMRT009",
+    "price": 699,
+    "status": true,
+    "stock": 40,
+    "category": "Tecnología"
+  },
+  {
+    "id": 10,
+    "title": "Altavoz Bluetooth",
+    "description": "Altavoz portátil con conexión Bluetooth",
+    "code": "BLTH010",
+    "price": 79.99,
+    "status": true,
+    "stock": 85,
+    "category": "Tecnología"
+  }
+]
