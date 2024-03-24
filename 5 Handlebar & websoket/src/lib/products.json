@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "title": "Licuadora",
+    "description": "Licuadora de alta potencia con tecnología de cuchillas de acero inoxidable",
+    "code": "LCZ001",
+    "price": 59.99,
+    "status": true,
+    "stock": 50,
+    "category": "Electrodomésticos"
+  },
+  {
+    "id": 3,
+    "title": "Camisa Polo",
+    "description": "Camisa polo de algodón para hombre",
+    "code": "CP003",
+    "price": 29.99,
+    "status": true,
+    "stock": 40,
+    "category": "Ropa"
+  },
+  {
+    "id": 4,
+    "title": "Zapatillas Deportivas",
+    "description": "Zapatillas deportivas para correr",
+    "code": "ZD004",
+    "price": 79.99,
+    "status": true,
+    "stock": 60,
+    "category": "Ropa"
+  },
+  {
+    "id": 5,
+    "title": "Muñeca Barbie",
+    "description": "Muñeca Barbie con vestido de gala",
+    "code": "MB005",
+    "price": 24.99,
+    "status": true,
+    "stock": 50,
+    "category": "Juguetes"
+  },
+  {
+    "id": 6,
+    "title": "Robot Educativo",
+    "description": "Robot educativo que enseña programación básica",
+    "code": "RE006",
+    "price": 39.99,
+    "status": true,
+    "stock": 40,
+    "category": "Juguetes"
+  },
+  {
+    "id": 7,
+    "title": "Cafetera",
+    "description": "Cafetera de goteo con jarra de vidrio",
+    "code": "CF007",
+    "price": 34.99,
+    "status": true,
+    "stock": 70,
+    "category": "Electrodomésticos"
+  },
+  {
+    "id": 8,
+    "title": "Sudadera",
+    "description": "Sudadera con capucha unisex",
+    "code": "SD008",
+    "price": 39.99,
+    "status": true,
+    "stock": 40,
+    "category": "Ropa"
+  },
+  {
+    "id": 9,
+    "title": "Bloques de Construcción",
+    "description": "Set de bloques de construcción para niños",
+    "code": "BC009",
+    "price": 19.99,
+    "status": true,
+    "stock": 60,
+    "category": "Juguetes"
+  },
+  {
+    "id": 10,
+    "title": "Batidora",
+    "description": "Batidora de mano con múltiples accesorios",
+    "code": "BD010",
+    "price": 29.99,
+    "status": true,
+    "stock": 50,
+    "category": "Electrodomésticos"
+  },
+  {
+    "id": 11,
+    "title": "Pantalones Vaqueros",
+    "description": "Pantalones vaqueros de estilo clásico para hombre",
+    "code": "PV011",
+    "price": 49.99,
+    "status": true,
+    "stock": 30,
+    "category": "Ropa"
+  },
+  {
+    "id": 12,
+    "title": "Set de Té",
+    "description": "Set de té de porcelana con tetera y tazas",
+    "code": "ST012",
+    "price": 19.99,
+    "status": true,
+    "stock": 50,
+    "category": "Electrodomésticos"
+  },
+  {
+    "id": 13,
+    "title": "Vestido",
+    "description": "Vestido de fiesta para mujer",
+    "code": "VD013",
+    "price": 69.99,
+    "status": true,
+    "stock": 40,
+    "category": "Ropa"
+  },
+  {
+    "id": 14,
+    "title": "Juego de Mesa",
+    "description": "Juego de mesa para toda la familia",
+    "code": "JM014",
+    "price": 34.99,
+    "status": true,
+    "stock": 60,
+    "category": "Juguetes"
+  },
+  {
+    "id": 15,
+    "title": "Aspiradora",
+    "description": "Aspiradora de mano para limpieza del hogar",
+    "code": "ASP015",
+    "price": 89.99,
+    "status": true,
+    "stock": 30,
+    "category": "Electrodomésticos"
+  },
+  {
+    "id": 16,
+    "title": "Chaquetón",
+    "description": "Chaquetón acolchado para el invierno",
+    "code": "CH016",
+    "price": 99.99,
+    "status": true,
+    "stock": 40,
+    "category": "Ropa"
+  },
+  {
+    "id": 17,
+    "title": "Rompecabezas",
+    "description": "Rompecabezas de 1000 piezas",
+    "code": "RC017",
+    "price": 19.99,
+    "status": true,
+    "stock": 50,
+    "category": "Juguetes"
+  },
+  {
+    "id": 18,
+    "title": "Plancha de Vapor",
+    "description": "Plancha de vapor con suela antiadherente",
+    "code": "PV018",
+    "price": 49.99,
+    "status": true,
+    "stock": 30,
+    "category": "Electrodomésticos"
+  },
+  {
+    "id": 19,
+    "title": "Bufanda",
+    "description": "Bufanda de lana para el invierno",
+    "code": "BF019",
+    "price": 14.99,
+    "status": true,
+    "stock": 60,
+    "category": "Ropa"
+  },
+  {
+    "title": "Mesa",
+    "description": "Mesa de madera",
+    "code": "ME987",
+    "price": 300,
+    "status": true,
+    "stock": 10,
+    "category": "Hogar",
+    "id": 20
+  }
+]

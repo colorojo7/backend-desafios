@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Cart",
+    "products": []
+  },
+  {
+    "id": 2,
+    "name": "Carro de ropa",
+    "products": [
+      {
+        "productID": 3,
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Cart Number 2",
+    "products": []
+  }
+]
